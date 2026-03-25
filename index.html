@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)file:///Users/malkhazpertaia/Desktop/cx_analyzer/reports/cx_report_n-a_20260325_123827.html -->
+<html lang="ka"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>სერვის შეფასება — Customer Service Call - Power Outage Complaint</title>
+<script src="./სერვის შეფასება — Customer Service Call - Power Outage Complaint_files/plotly-2.27.0.min.js"></script><style id="plotly.js-style-global"></style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./სერვის შეფასება — Customer Service Call - Power Outage Complaint_files/css2" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07071a;--surface:#0d0d28;
+  --card:rgba(255,255,255,0.04);--card-h:rgba(255,255,255,0.07);
+  --border:rgba(255,255,255,0.08);--border-h:rgba(255,255,255,0.15);
+  --accent:#6366f1;--accent-2:#818cf8;
+  --green:#10b981;--green-2:#34d399;
+  --amber:#f59e0b;--orange:#f97316;--red:#ef4444;
+  --text:#f1f5f9;--text-2:#94a3b8;--text-3:#475569;
+  --r:14px;--rs:8px;
+  --shadow:0 4px 24px rgba(0,0,0,.5);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter','Noto Sans Georgian',sans-serif;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar-thumb{background:var(--border-h);border-radius:3px}
+
+/* ── Layout ── */
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+section{padding:44px 0}
+section+section{border-top:1px solid var(--border)}
+
+/* ── Hero ── */
+.hero{
+  background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(99,102,241,.18) 0%,transparent 70%),
+            linear-gradient(180deg,#0c0c26 0%,var(--bg) 100%);
+  padding:52px 0 36px;border-bottom:1px solid var(--border);
+}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(99,102,241,.14);border:1px solid rgba(99,102,241,.3);
+  color:var(--accent-2);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 12px;border-radius:100px;margin-bottom:14px;
+}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--accent-2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-title{font-size:clamp(18px,2.8vw,28px);font-weight:800;line-height:1.2;margin-bottom:10px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px}
+.hero-meta-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-2)}
+.hero-thumb{width:200px;height:113px;object-fit:cover;border-radius:var(--r);border:1px solid var(--border);box-shadow:var(--shadow)}
+
+/* ── Cards ── */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px;transition:background .2s,border-color .2s}
+.card:hover{background:var(--card-h);border-color:var(--border-h)}
+.card-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:6px}
+
+/* ── Section headings ── */
+.sec-tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2);margin-bottom:4px}
+.sec-h{font-size:22px;font-weight:800;margin-bottom:24px}
+
+/* ── Score banner ── */
+.score-banner{
+  display:grid;grid-template-columns:auto auto 1fr 1fr 1fr;
+  gap:0;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--border);margin-bottom:28px;
+}
+.score-main{
+  background:linear-gradient(135deg,rgba(99,102,241,.2) 0%,rgba(16,185,129,.1) 100%);
+  padding:28px 32px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border-right:1px solid var(--border);min-width:140px;
+}
+.score-main-num{font-size:52px;font-weight:900;line-height:1}
+.score-main-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-2);margin-top:4px}
+/* FCR card */
+.score-fcr{
+  padding:20px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border-right:1px solid var(--border);min-width:172px;gap:1px;
+}
+.score-fcr-icon{font-size:36px;font-weight:900;line-height:1;margin-bottom:2px}
+.score-fcr-chip{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-3);background:rgba(255,255,255,.05);border:1px solid var(--border);
+  padding:2px 8px;border-radius:100px;margin-bottom:5px}
+.score-fcr-status{font-size:15px;font-weight:800;text-align:center}
+.score-fcr-reason{font-size:11px;color:var(--text-3);margin-top:6px;text-align:center;
+  max-width:155px;line-height:1.4}
+.score-stat{padding:20px 22px;border-right:1px solid var(--border)}
+.score-stat:last-child{border-right:none}
+.score-stat-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:4px}
+.score-stat-val{font-size:20px;font-weight:800;color:var(--text)}
+
+/* ── Strengths / Weaknesses summary ── */
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.summary-col{border-radius:var(--r);overflow:hidden;border:1px solid var(--border)}
+.summary-col-head{
+  display:flex;align-items:center;gap:9px;padding:13px 18px;
+  font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  border-bottom:1px solid var(--border);
+}
+.summary-col-icon{font-size:17px;font-weight:900;line-height:1}
+.summary-strengths .summary-col-head{background:rgba(16,185,129,.1);color:#10b981;border-color:rgba(16,185,129,.2)}
+.summary-weaknesses .summary-col-head{background:rgba(239,68,68,.1);color:#ef4444;border-color:rgba(239,68,68,.2)}
+.summary-item{padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.04)}
+.summary-item:last-child{border-bottom:none}
+.summary-item-label{font-weight:600;color:var(--text);font-size:13px;margin-bottom:5px}
+.summary-item-evidence{font-size:12px;color:var(--text-2);line-height:1.55}
+@media(max-width:700px){.summary-grid{grid-template-columns:1fr}}
+
+/* ── Charts grid ── */
+.charts-2col{display:grid;grid-template-columns:1fr 1.6fr;gap:20px;margin-bottom:20px}
+.chart-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;overflow:hidden}
+.chart-title{font-size:12px;font-weight:600;color:var(--text-2);margin-bottom:6px}
+
+/* ── Summary text ── */
+.summary-text{font-size:15px;color:var(--text-2);line-height:1.75;white-space:pre-line}
+
+/* ── Scores table ── */
+.scores-table{width:100%;border-collapse:collapse;font-size:13px}
+.scores-table th{
+  background:rgba(255,255,255,.04);
+  padding:10px 14px;text-align:left;
+  font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);
+  border-bottom:1px solid var(--border);
+}
+.scores-table td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top}
+.scores-table tr:last-child td{border-bottom:none}
+.scores-table tr:hover td{background:rgba(255,255,255,.03)}
+.principle-group td:first-child{
+  background:rgba(99,102,241,.06);
+  font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent-2);writing-mode:vertical-lr;text-orientation:mixed;
+  transform:rotate(180deg);padding:14px 8px;width:32px;text-align:center;
+}
+.sub-label{font-weight:600;color:var(--text);margin-bottom:3px}
+.sub-quote{font-size:11px;color:var(--text-3);font-family:'JetBrains Mono',monospace;font-style:italic;margin-top:4px;line-height:1.4;background:rgba(255,255,255,.03);padding:4px 8px;border-radius:var(--rs);border-left:2px solid var(--border)}
+.sub-reasoning{font-size:12px;color:var(--text-2);margin-top:5px}
+
+/* ── Score pills ── */
+.pill{display:inline-flex;align-items:center;padding:4px 12px;border-radius:100px;font-size:12px;font-weight:800;letter-spacing:.04em;min-width:60px;justify-content:center;flex-shrink:0}
+.pill-full{background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.3)}
+.pill-half{background:rgba(245,158,11,.15);color:#f59e0b;border:1px solid rgba(245,158,11,.3)}
+.pill-zero{background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.3)}
+.pill-na  {background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)}
+
+/* ── Dealbreakers ── */
+.db-table{width:100%;border-collapse:collapse;font-size:13px}
+.db-table th{background:rgba(255,255,255,.04);padding:10px 14px;text-align:left;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border)}
+.db-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top}
+.db-table tr:last-child td{border-bottom:none}
+.db-table col.col-id{width:44px}
+.db-table col.col-desc{width:45%}
+.db-table col.col-found{width:110px}
+.db-yes{color:#ef4444;font-weight:700}
+.db-no {color:#10b981;font-weight:700}
+.db-badge-yes{display:inline-flex;align-items:center;gap:5px;background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.3);padding:3px 10px;border-radius:100px;font-size:11px;font-weight:800}
+.db-badge-no {display:inline-flex;align-items:center;gap:5px;background:rgba(16,185,129,.12);color:#10b981;border:1px solid rgba(16,185,129,.25);padding:3px 10px;border-radius:100px;font-size:11px;font-weight:800}
+
+/* ── WOW service ── */
+.wow-box{
+  background:linear-gradient(135deg,rgba(245,158,11,.1) 0%,rgba(249,115,22,.06) 100%);
+  border:1px solid rgba(245,158,11,.25);border-radius:var(--r);padding:24px 28px;
+  display:flex;gap:20px;align-items:flex-start;
+}
+.wow-icon{font-size:32px;line-height:1;flex-shrink:0;margin-top:2px}
+.wow-found{font-size:13px;font-weight:700;margin-bottom:6px}
+.wow-evidence{font-size:13px;color:var(--text-2);line-height:1.7;white-space:pre-line}
+
+/* ── Micro-improvements ── */
+.improvements-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.imp-card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:22px;transition:all .2s;
+}
+.imp-card:hover{background:var(--card-h);border-color:var(--border-h);transform:translateY(-2px);box-shadow:var(--shadow)}
+.imp-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:28px;height:28px;border-radius:50%;
+  background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.3);
+  color:var(--accent-2);font-size:13px;font-weight:800;
+  margin-bottom:10px;
+}
+.imp-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:14px;line-height:1.3}
+.imp-tip{
+  display:flex;gap:9px;align-items:flex-start;
+  font-size:13px;color:var(--text-2);padding:8px 0;
+}
+.imp-tip+.imp-tip{border-top:1px solid var(--border)}
+.tip-dot{color:var(--accent-2);font-size:16px;line-height:1;flex-shrink:0;margin-top:1px;font-weight:800}
+
+/* ── Dealbreaker override banner ── */
+.db-override-banner{
+  display:flex;gap:16px;align-items:flex-start;
+  background:linear-gradient(135deg,rgba(239,68,68,.18) 0%,rgba(239,68,68,.06) 100%);
+  border:1px solid rgba(239,68,68,.45);border-radius:var(--r);
+  padding:20px 24px;margin-bottom:24px;
+}
+.db-override-icon{font-size:30px;line-height:1;flex-shrink:0;margin-top:2px}
+.db-override-title{font-size:15px;font-weight:800;color:#ef4444;margin-bottom:6px}
+.db-override-body{font-size:13px;color:var(--text-2);line-height:1.6}
+.db-override-body strong{color:var(--text)}
+.db-override-wouldbe{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:10px;padding:8px 14px;
+  background:rgba(255,255,255,.05);border:1px solid var(--border);
+  border-radius:var(--rs);font-size:13px;color:var(--text-2);
+}
+.db-override-wouldbe .wouldbe-val{
+  font-size:18px;font-weight:800;color:var(--text-3);
+  text-decoration:line-through;
+}
+.db-override-wouldbe .wouldbe-real{font-size:18px;font-weight:800;color:#ef4444}
+/* Score pills dimmed when dealbreaker active */
+.pill-db-dim{opacity:0.45;filter:saturate(0.25);text-decoration:line-through}
+
+/* ── Footer ── */
+.footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-size:12px;color:var(--text-3)}
+.footer strong{color:var(--text-2)}
+
+/* ── Animations ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.fadein{animation:fadeUp .45s ease both}
+
+/* ── Responsive ── */
+@media(max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}.hero-thumb{display:none}
+  .charts-2col{grid-template-columns:1fr}
+  .score-banner{grid-template-columns:1fr 1fr}
+  .score-main{grid-column:1/-1}
+  .score-fcr{grid-column:1/-1;border-right:none;border-bottom:1px solid var(--border)}
+  .improvements-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .wrap{padding:0 14px}section{padding:28px 0}
+  .score-banner{grid-template-columns:1fr}
+  .score-main{border-right:none;border-bottom:1px solid var(--border)}
+}
+
+/* ════════════════════════════════════════════
+   TAB NAVIGATION
+   ════════════════════════════════════════════ */
+.tab-nav{
+  background:var(--surface);border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:100;
+}
+.tab-nav-inner{display:flex;gap:0}
+.tab-btn{
+  background:none;border:none;cursor:pointer;
+  padding:15px 26px;
+  display:flex;align-items:center;gap:9px;
+  font-family:inherit;font-size:14px;font-weight:600;color:var(--text-2);
+  border-bottom:2px solid transparent;
+  transition:color .18s,border-color .18s;
+  white-space:nowrap;
+}
+.tab-btn:hover{color:var(--text)}
+.tab-btn.active{color:var(--accent-2);border-bottom-color:var(--accent)}
+.tab-btn-icon{font-size:16px;line-height:1}
+.tab-btn-badge{
+  font-size:10px;font-weight:800;padding:2px 7px;border-radius:100px;
+  background:rgba(99,102,241,.2);color:var(--accent-2);letter-spacing:.04em;
+}
+
+/* ════════════════════════════════════════════
+   SEMANTIC ANALYSIS TAB
+   ════════════════════════════════════════════ */
+
+/* SSA intro banner */
+.ssa-intro{
+  background:linear-gradient(135deg,rgba(99,102,241,.12) 0%,rgba(139,92,246,.06) 100%);
+  border:1px solid rgba(99,102,241,.25);border-radius:var(--r);
+  padding:22px 28px;display:flex;gap:18px;align-items:flex-start;margin-bottom:32px;
+}
+.ssa-intro-icon{font-size:28px;line-height:1;flex-shrink:0;margin-top:2px}
+.ssa-intro-title{font-size:16px;font-weight:800;color:var(--accent-2);margin-bottom:5px}
+.ssa-intro-body{font-size:13px;color:var(--text-2);line-height:1.6}
+
+/* Executive Scorecard */
+.ssa-scorecard-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px}
+.ssa-score-card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:28px 20px;text-align:center;transition:all .2s;
+}
+.ssa-score-card:hover{background:var(--card-h);border-color:var(--border-h);transform:translateY(-2px)}
+.ssa-ring-wrap{display:flex;justify-content:center;margin-bottom:14px}
+.ssa-ring-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:8px}
+.ssa-ring-reasoning{font-size:12px;color:var(--text-2);line-height:1.55;margin-top:10px;text-align:left}
+
+/* Ergonomics */
+.ssa-erg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ssa-erg-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px}
+.ssa-card-head{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:14px}
+.velocity-pill{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:6px 14px;border-radius:100px;font-size:13px;font-weight:700;
+  margin-bottom:12px;
+}
+.interrupt-row{display:flex;gap:20px;margin-bottom:12px}
+.interrupt-stat{text-align:center}
+.interrupt-num{font-size:30px;font-weight:900;line-height:1;margin-bottom:2px}
+.interrupt-lbl{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-3)}
+.dominance-bar-wrap{margin-bottom:12px}
+.dominance-bar{display:flex;border-radius:100px;overflow:hidden;height:10px;margin:8px 0}
+.dom-op{background:var(--accent);transition:width .5s ease}
+.dom-cu{background:rgba(148,163,184,.3)}
+.dominance-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--text-2);font-weight:600}
+.ssa-detail-text{font-size:12px;color:var(--text-2);line-height:1.55}
+
+/* Acoustic */
+.ssa-acoustic-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.tone-pill-big{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 20px;border-radius:100px;font-size:15px;font-weight:800;
+  margin-bottom:14px;
+}
+.tone-icon-big{font-size:20px;line-height:1}
+.confidence-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.conf-chip{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:4px 10px;border-radius:100px;font-size:11px;font-weight:700;
+  border:1px solid;
+}
+.conf-chip-ok  {color:#10b981;background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.3)}
+.conf-chip-warn{color:#f97316;background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.3)}
+.alignment-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:8px 16px;border-radius:var(--rs);font-size:13px;font-weight:700;
+  margin-bottom:12px;
+}
+.alignment-ok  {background:rgba(16,185,129,.1);color:#10b981;border:1px solid rgba(16,185,129,.25)}
+.alignment-bad {background:rgba(239,68,68,.1); color:#ef4444;border:1px solid rgba(239,68,68,.25)}
+
+/* Semantic Journey */
+.sentiment-flow{display:flex;align-items:center;gap:0;margin-bottom:24px;flex-wrap:wrap;gap:10px}
+.sent-box{
+  flex:1;min-width:120px;padding:18px 14px;border-radius:var(--r);text-align:center;
+  border:1px solid;
+}
+.sent-box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;opacity:.7}
+.sent-box-val{font-size:17px;font-weight:800}
+.sent-arrow{font-size:28px;font-weight:900;flex-shrink:0;padding:0 6px}
+.pivot-block{
+  background:rgba(255,255,255,.03);border-left:3px solid var(--accent);
+  border-radius:0 var(--rs) var(--rs) 0;padding:18px 20px;
+  margin-top:20px;
+}
+.pivot-header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.pivot-effect-badge{
+  font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 10px;border-radius:100px;
+}
+.pivot-effect-improved{background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.3)}
+.pivot-effect-worsened{background:rgba(239,68,68,.15); color:#ef4444;border:1px solid rgba(239,68,68,.3)}
+.pivot-quote{font-size:14px;color:var(--text);font-style:italic;font-family:'JetBrains Mono',monospace;line-height:1.55;margin-bottom:10px}
+.pivot-explanation{font-size:12px;color:var(--text-2);line-height:1.6}
+
+/* Resolution */
+.ssa-resolution-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.load-levels{display:flex;gap:6px;margin-bottom:12px}
+.load-level{
+  flex:1;padding:8px 4px;text-align:center;border-radius:var(--rs);
+  font-size:11px;font-weight:700;border:1px solid var(--border);
+  color:var(--text-3);background:rgba(255,255,255,.02);
+  transition:all .2s;
+}
+.load-level.active{color:#fff}
+.close-item{
+  display:flex;align-items:flex-start;gap:10px;padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+.close-item:last-of-type{border-bottom:none}
+.close-icon{
+  width:22px;height:22px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;margin-top:1px;
+}
+.close-icon-ok  {background:rgba(16,185,129,.2);color:#10b981}
+.close-icon-bad {background:rgba(239,68,68,.15); color:#ef4444}
+.close-item-label{font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px}
+.close-item-sub{font-size:11px;color:var(--text-3)}
+
+/* Behavioral Log */
+.behavioral-log{display:flex;flex-direction:column;gap:0;
+  border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.blog-item{
+  display:grid;grid-template-columns:36px 1fr auto;gap:14px;
+  align-items:flex-start;padding:16px 18px;
+  border-bottom:1px solid rgba(255,255,255,.04);
+  transition:background .15s;
+}
+.blog-item:last-child{border-bottom:none}
+.blog-item:hover{background:rgba(255,255,255,.03)}
+.blog-type-icon{font-size:20px;line-height:1;padding-top:2px;text-align:center}
+.blog-body{}
+.blog-moment{font-size:12px;font-weight:700;color:var(--text);margin-bottom:4px}
+.blog-quote{font-size:11px;color:var(--text-3);font-style:italic;font-family:'JetBrains Mono',monospace;
+  margin-top:4px;padding:4px 8px;background:rgba(255,255,255,.03);
+  border-radius:var(--rs);border-left:2px solid var(--border);line-height:1.45}
+.blog-impact-badge{
+  font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 9px;border-radius:100px;border:1px solid;flex-shrink:0;margin-top:2px;
+  align-self:flex-start;
+}
+.blog-empty{padding:24px;text-align:center;font-size:13px;color:var(--text-3)}
+
+/* Coaching Plan */
+.coaching-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.coaching-card{border-radius:var(--r);padding:24px;border:1px solid}
+.coaching-start{
+  background:linear-gradient(135deg,rgba(16,185,129,.1) 0%,rgba(52,211,153,.04) 100%);
+  border-color:rgba(16,185,129,.3);
+}
+.coaching-stop{
+  background:linear-gradient(135deg,rgba(239,68,68,.1) 0%,rgba(239,68,68,.04) 100%);
+  border-color:rgba(239,68,68,.3);
+}
+.coaching-label{
+  display:flex;align-items:center;gap:8px;
+  font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  margin-bottom:12px;
+}
+.coaching-start .coaching-label{color:#10b981}
+.coaching-stop  .coaching-label{color:#ef4444}
+.coaching-icon{font-size:18px;line-height:1}
+.coaching-text{font-size:14px;color:var(--text);line-height:1.65;font-weight:500}
+
+/* ── Call Timeline ── */
+.timeline-chart-wrap{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:6px 4px 4px;overflow:hidden;margin-bottom:20px;
+}
+.timeline-legend-row{
+  display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  padding:8px 16px 0;margin-bottom:4px;
+}
+.tl-legend-item{
+  display:flex;align-items:center;gap:6px;
+  font-size:11px;font-weight:600;color:var(--text-2);white-space:nowrap;
+}
+.tl-legend-dot{width:11px;height:11px;border-radius:2px;flex-shrink:0}
+.tl-legend-line{
+  width:22px;height:3px;border-radius:2px;flex-shrink:0;
+  background:linear-gradient(90deg,#818cf8,#6366f1);
+}
+.timeline-phases-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:12px;margin-top:16px;
+}
+.tl-phase-card{
+  background:var(--card);border-radius:var(--rs);padding:14px 16px;
+  border-left:3px solid;transition:all .2s;
+}
+.tl-phase-card:hover{background:var(--card-h);transform:translateY(-1px)}
+.tl-phase-header{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.tl-phase-num{
+  width:20px;height:20px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:900;color:#fff;
+}
+.tl-phase-name{font-size:13px;font-weight:700;color:var(--text)}
+.tl-phase-range{font-size:10px;color:var(--text-3);margin-bottom:6px;font-weight:600;letter-spacing:.04em}
+.tl-phase-desc{font-size:11px;color:var(--text-2);line-height:1.5}
+
+/* Unavailable state */
+.ssa-unavailable{
+  text-align:center;padding:64px 32px;
+  color:var(--text-3);font-size:14px;
+}
+.ssa-unavailable-icon{font-size:48px;margin-bottom:16px}
+
+@media(max-width:900px){
+  .ssa-scorecard-grid{grid-template-columns:1fr}
+  .ssa-erg-grid{grid-template-columns:1fr}
+  .ssa-acoustic-grid{grid-template-columns:1fr}
+  .ssa-resolution-grid{grid-template-columns:1fr}
+  .coaching-grid{grid-template-columns:1fr}
+}
+
+/* ── Interruption Instances ── */
+.interrupt-instances{display:flex;flex-direction:column;gap:6px;margin:10px 0 10px}
+.inst-row{
+  display:flex;align-items:flex-start;gap:8px;
+  padding:7px 10px;border-radius:var(--rs);
+  border:1px solid;font-size:12px;
+}
+.inst-row-neg{background:rgba(239,68,68,.06);border-color:rgba(239,68,68,.2)}
+.inst-row-aff{background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.2)}
+.inst-time-badge{
+  flex-shrink:0;font-size:10px;font-weight:800;letter-spacing:.04em;
+  padding:2px 6px;border-radius:100px;white-space:nowrap;margin-top:1px;
+}
+.inst-time-neg{background:rgba(239,68,68,.15);color:#ef4444}
+.inst-time-aff{background:rgba(16,185,129,.12);color:#10b981}
+.inst-icon{flex-shrink:0;font-size:11px;font-weight:900;margin-top:1px}
+.inst-quote{font-style:italic;color:var(--text-2);font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.45}
+
+/* ── Filler Word Chips ── */
+.filler-chips-row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}
+.filler-chip{
+  position:relative;
+  display:inline-flex;align-items:center;gap:4px;
+  padding:4px 9px;border-radius:100px;
+  font-size:11px;font-weight:700;cursor:default;
+  background:rgba(249,115,22,.10);color:#f97316;
+  border:1px solid rgba(249,115,22,.30);
+  transition:background .15s,border-color .15s;
+}
+.filler-chip:hover{background:rgba(249,115,22,.18);border-color:rgba(249,115,22,.5)}
+.filler-word{font-family:'JetBrains Mono',monospace}
+.filler-time{font-size:9px;font-weight:800;opacity:.7;letter-spacing:.03em}
+.filler-tooltip{
+  display:none;
+  position:absolute;
+  bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);
+  background:#1e293b;border:1px solid rgba(255,255,255,.14);
+  color:var(--text-2);font-size:11px;font-weight:400;font-style:italic;
+  font-family:'JetBrains Mono',monospace;
+  padding:6px 10px;border-radius:var(--rs);
+  white-space:nowrap;z-index:20;
+  box-shadow:0 4px 16px rgba(0,0,0,.5);
+  pointer-events:none;
+}
+.filler-chip:hover .filler-tooltip{display:block}
+
+/* ── Call Summary (SSA Tab) ── */
+.call-summary-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+.csm-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px 20px;text-align:center}
+.csm-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:8px}
+.csm-value{font-size:18px;font-weight:800;color:var(--text);line-height:1.3}
+@media(max-width:800px){.call-summary-metrics{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.call-summary-metrics{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge fadein"><span class="dot"></span>სერვის შეფასების ანგარიში</div>
+        <h1 class="hero-title fadein">Customer Service Call - Power Outage Complaint</h1>
+        <div class="hero-meta">
+          
+          <span class="hero-meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            n/a
+          </span>
+          
+          
+          <span class="hero-meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            2m 17s
+          </span>
+          
+          <span class="hero-meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            25 March 2026, 12:38
+          </span>
+          
+        </div>
+        
+        <div style="margin-top:12px"><a href="https://www.youtube.com/watch?v=h33wnfUMgS4&amp;t=2s" target="_blank" style="font-size:11px;color:var(--text-3)">▶ https://www.youtube.com/watch?v=h33wnfUMgS4&amp;t=2s</a></div>
+        
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+<!-- ══ TAB NAVIGATION ══ -->
+<nav class="tab-nav" id="tab-nav">
+  <div class="wrap">
+    <div class="tab-nav-inner">
+      <button class="tab-btn" id="btn-main" onclick="switchTab(&#39;main&#39;)">
+        <span class="tab-btn-icon">📊</span>
+        <span>სერვის შეფასება</span>
+      </button>
+      <button class="tab-btn active" id="btn-semantic" onclick="switchTab(&#39;semantic&#39;)">
+        <span class="tab-btn-icon">🧠</span>
+        <span>სემანტიკური ანალიზი</span>
+        <span class="tab-btn-badge">SSA</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="tab-main" style="display: none;">
+<!-- ══ SCORE DASHBOARD ══ -->
+<section>
+  <div class="wrap">
+    <p class="sec-tag">ჯამური შეფასება</p>
+    <h2 class="sec-h">Score Dashboard</h2>
+
+    <div class="score-banner">
+      <div class="score-main">
+        <div class="score-main-num" style="color:#f59e0b">58.0%</div>
+        <div class="score-main-label">ჯამური ქულა</div>
+      </div>
+
+      <!-- FCR — First Contact Resolution -->
+      <div class="score-fcr" style="background:linear-gradient(135deg,#ef444418 0%,transparent 100%);
+                  border-right:1px solid #ef444433;">
+        <div class="score-fcr-icon" style="color:#ef4444">✗</div>
+        <div class="score-fcr-chip">FCR</div>
+        <div class="score-fcr-status" style="color:#ef4444">გადაუწყვეტელია</div>
+        
+        <div class="score-fcr-reason">მომხმარებლის პრობლემა (ელექტროენერგიის გათიშვა) არ მოგვარებულა ზარის განმავლობაში და საკითხი ღია დარჩა.</div>
+        
+      </div>
+
+      <div class="score-stat">
+        <div class="score-stat-label">Dealbreakers</div>
+        <div class="score-stat-val" style="color:#10b981">
+          არ გამოვლინდა
+        </div>
+      </div>
+      <div class="score-stat">
+        <div class="score-stat-label">Extra Mile</div>
+        <div class="score-stat-val" style="color:var(--text-2)">
+          არა
+        </div>
+      </div>
+      <div class="score-stat">
+        <div class="score-stat-label">ანალიზი</div>
+        <div class="score-stat-val" style="color:var(--accent-2)">10 ქვე-ქცევა</div>
+      </div>
+    </div>
+
+    
+
+    <div class="charts-2col">
+      <div class="chart-card">
+        <div class="chart-title">ჯამური ქულა</div>
+        <div>                            <div id="06ea9596-ef38-48e9-9305-9a1815c200df" class="plotly-graph-div js-plotly-plot" style="height:260px; width:100%;"><div class="plot-container plotly"><div class="user-select-none svg-container" style="position: relative; width: 100%; height: 260px;"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="378.922" height="260" style="background: rgba(0, 0, 0, 0);"><defs id="defs-acf828"><g class="clips"></g><g class="gradients"></g><g class="patterns"></g></defs><g class="bglayer"></g><g class="draglayer"></g><g class="layer-below"><g class="imagelayer"></g><g class="shapelayer"></g></g><g class="cartesianlayer"></g><g class="polarlayer"></g><g class="smithlayer"></g><g class="ternarylayer"></g><g class="geolayer"></g><g class="funnelarealayer"></g><g class="pielayer"></g><g class="iciclelayer"></g><g class="treemaplayer"></g><g class="sunburstlayer"></g><g class="glimages"></g></svg><div class="gl-container"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="378.922" height="260"><defs id="topdefs-acf828"><g class="clips"></g></defs><g class="indicatorlayer"><g class="trace"><g class="numbers" transform="translate(189.5,198.75)"><text text-anchor="middle" class="number" data-unformatted="58%" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 48px; fill: rgb(241, 245, 249); fill-opacity: 1; white-space: pre;">58%</text></g><g class="angular" transform="translate(189.5,209.75)"><g class="bg-arc"><path d="M-159.5,-1.9533116446400285e-14A159.5,159.5 0 0,1 159.5,0L119.625,0A119.625,119.625 0 0,0 -119.625,-1.4649837334800214e-14Z" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 0.03; stroke-width: 0;"></path></g><g class="bg-arc"><path d="M-159.5,-1.9533116446400285e-14A159.5,159.5 0 0,1 -49.2882106028041,-151.69351434907702L-36.966157952103075,-113.77013576180775A119.625,119.625 0 0,0 -119.625,-1.4649837334800214e-14Z" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(239, 68, 68); fill-opacity: 0.12; stroke-width: 0;"></path></g><g class="bg-arc"><path d="M-49.2882106028041,-151.69351434907702A159.5,159.5 0 0,1 49.28821060280412,-151.693514349077L36.96615795210309,-113.77013576180774A119.625,119.625 0 0,0 -36.966157952103075,-113.77013576180775Z" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(249, 115, 22); fill-opacity: 0.12; stroke-width: 0;"></path></g><g class="bg-arc"><path d="M49.28821060280412,-151.693514349077A159.5,159.5 0 0,1 112.78353159925433,-112.78353159925432L84.58764869944075,-84.58764869944073A119.625,119.625 0 0,0 36.96615795210309,-113.77013576180774Z" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(245, 158, 11); fill-opacity: 0.12; stroke-width: 0;"></path></g><g class="bg-arc"><path d="M112.78353159925433,-112.78353159925432A159.5,159.5 0 0,1 159.5,0L119.625,0A119.625,119.625 0 0,0 84.58764869944075,-84.58764869944073Z" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(16, 185, 129); fill-opacity: 0.12; stroke-width: 0;"></path></g><g class="value-arc"><path d="M-145.145,-1.777513596622426e-14A145.145,145.145 0 0,1 36.09609367254284,-140.58500292201518L33.319471082347235,-129.77077192801397A133.98,133.98 0 0,0 -133.98,-1.6407817814976238e-14Z" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(245, 158, 11); fill-opacity: 1; stroke-width: 0;"></path></g><g class="threshold-arc"><path d="M38.67438607772447,-150.62678884501622A155.5125,155.5125 0 0,1 38.67438607772447,-150.62678884501622L30.741178677165607,-119.7289860050129A123.6125,123.6125 0 0,0 30.741178677165607,-119.7289860050129Z" style="stroke: rgb(245, 158, 11); stroke-opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke-width: 3;"></path></g><g class="gauge-outline"><path d="M-159.5,-1.9533116446400285e-14A159.5,159.5 0 0,1 159.5,0L119.625,0A119.625,119.625 0 0,0 -119.625,-1.4649837334800214e-14Z" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 0; stroke-width: 0;"></path></g></g><g class="angularaxis crisp"><path class="xangularaxistick ticks crisp" d="M0.5,0h5" transform="translate(30,209.74999999999997)rotate(-180)" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path><path class="xangularaxistick ticks crisp" d="M0.5,0h5" transform="translate(76.71646840074568,96.96646840074567)rotate(-135)" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path><path class="xangularaxistick ticks crisp" d="M0.5,0h5" transform="translate(189.5,50.25)rotate(-90)" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path><path class="xangularaxistick ticks crisp" d="M0.5,0h5" transform="translate(302.28353159925433,96.96646840074568)rotate(-45)" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path><path class="xangularaxistick ticks crisp" d="M0.5,0h5" transform="translate(349,209.75)rotate(0)" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path><g class="xangularaxistick"><text text-anchor="end" x="-7.5" y="3.4999999999999987" data-unformatted="0" data-math="N" transform="translate(30,209.74999999999997)" style="font-family: Inter, sans-serif; font-size: 10px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;">0</text></g><g class="xangularaxistick"><text text-anchor="end" x="-5.303300858899106" y="-4.242640687119286" data-unformatted="25" data-math="N" transform="translate(76.71646840074568,96.96646840074567)" style="font-family: Inter, sans-serif; font-size: 10px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;">25</text></g><g class="xangularaxistick"><text text-anchor="middle" x="4.592425496802575e-16" y="-9.5" data-unformatted="50" data-math="N" transform="translate(189.5,50.25)" style="font-family: Inter, sans-serif; font-size: 10px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;">50</text></g><g class="xangularaxistick"><text text-anchor="start" x="5.303300858899107" y="-4.242640687119284" data-unformatted="75" data-math="N" transform="translate(302.28353159925433,96.96646840074568)" style="font-family: Inter, sans-serif; font-size: 10px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;">75</text></g><g class="xangularaxistick"><text text-anchor="start" x="7.5" y="3.5" data-unformatted="100" data-math="N" transform="translate(349,209.75)" style="font-family: Inter, sans-serif; font-size: 10px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;">100</text></g></g><text class="title" text-anchor="middle" data-unformatted="" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 12px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre;" transform="translate(189.5,26.75)"></text></g></g><g class="layer-above"><g class="imagelayer"></g><g class="shapelayer"></g></g><g class="selectionlayer"></g><g class="infolayer"><g class="g-gtitle"></g></g><g class="menulayer"></g><g class="zoomlayer"></g></svg><div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="378.922" height="260"><g class="hoverlayer"></g></svg></div></div></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("06ea9596-ef38-48e9-9305-9a1815c200df")) {                    Plotly.newPlot(                        "06ea9596-ef38-48e9-9305-9a1815c200df",                        [{"domain":{"x":[0,1],"y":[0,1]},"gauge":{"axis":{"range":[0,100],"tickfont":{"color":"#64748b","size":10},"tickvals":[0,25,50,75,100]},"bar":{"color":"#f59e0b","thickness":0.28},"bgcolor":"rgba(255,255,255,0.03)","borderwidth":0,"steps":[{"color":"rgba(239,68,68,0.12)","range":[0,40]},{"color":"rgba(249,115,22,0.12)","range":[40,60]},{"color":"rgba(245,158,11,0.12)","range":[60,75]},{"color":"rgba(16,185,129,0.12)","range":[75,100]}],"threshold":{"line":{"color":"#f59e0b","width":3},"thickness":0.8,"value":58.0}},"mode":"gauge+number","number":{"font":{"color":"#f1f5f9","size":48},"suffix":"%"},"value":58.0,"type":"indicator"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Inter, sans-serif","color":"#94a3b8"},"margin":{"t":30,"b":30,"l":30,"r":30},"height":260,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">პარამეტრები — Radar</div>
+        <div>                            <div id="d330c26c-3155-4c1b-a945-429083402018" class="plotly-graph-div js-plotly-plot" style="height:380px; width:100%;"><div class="plot-container plotly"><div class="user-select-none svg-container" style="position: relative; width: 100%; height: 380px;"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="629.078" height="380" style="background: rgba(0, 0, 0, 0);"><defs id="defs-5ac884"><g class="clips"><clippath id="clip5ac884polar-for-traces"><path d="M160,0A160,160 0,1,0 -160,-1.9594348786357652e-14A160,160 0,1,0 160,3.9188697572715304e-14Z" transform="translate(160,160)"></path></clippath></g><g class="gradients"></g><g class="patterns"></g></defs><g class="bglayer"></g><g class="draglayer"></g><g class="layer-below"><g class="imagelayer"></g><g class="shapelayer"></g></g><g class="cartesianlayer"></g><g class="polarlayer"><g class="polar"><g class="polarsublayer draglayer"><path class="angulardrag drag cursor-move" d="M160,0A160,160 0,1,0 -160,-1.9594348786357652e-14A160,160 0,1,0 160,3.9188697572715304e-14ZM190,0A190,190 0,1,1 -190,-2.326828918379971e-14A190,190 0,1,1 190,4.653657836759942e-14Z" transform="translate(314.5,190)" style="fill: transparent; stroke-width: 0; pointer-events: all;"></path><rect class="radialdrag-inner drag cursor-crosshair" x="-25" y="-25" width="50" height="50" transform="translate(289.5,190)" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="radialdrag drag cursor-crosshair" x="-25" y="-25" width="50" height="50" transform="translate(499.5,190)" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><path class="maindrag drag cursor-crosshair" d="M160,0A160,160 0,1,0 -160,-1.9594348786357652e-14A160,160 0,1,0 160,3.9188697572715304e-14Z" transform="translate(314.5,190)" style="fill: transparent; stroke-width: 0; pointer-events: all;"></path></g><g class="polarsublayer plotbg"><path d="M160,0A160,160 0,1,0 -160,-1.9594348786357652e-14A160,160 0,1,0 160,3.9188697572715304e-14Z" transform="translate(314.5,190)" style="fill: rgb(255, 255, 255); fill-opacity: 0.02;"></path></g><g class="polarsublayer backplot"><g class="maplayer"></g></g><g class="polarsublayer angular-grid" style="fill: none;"><path class="angularaxisgrid" d="M314.5,190L474.5,190" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="angularaxisgrid" d="M314.5,190L363.94271909999156,37.830957392775446" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="angularaxisgrid" d="M314.5,190L185.05728090000844,95.95435963320428" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="angularaxisgrid" d="M314.5,190L185.05728090000838,284.0456403667957" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="angularaxisgrid" d="M314.5,190L363.94271909999156,342.1690426072246" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path></g><g class="polarsublayer radial-grid" transform="translate(314.5,190)" style="fill: none;"><path class="xgrid" d="M32,0A32,32 0,1,0 -32,-3.91886975727153e-15A32,32 0,1,0 32,7.83773951454306e-15Z" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="xgrid" d="M64,0A64,64 0,1,0 -64,-7.83773951454306e-15A64,64 0,1,0 64,1.567547902908612e-14Z" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="xgrid" d="M96,0A96,96 0,1,0 -96,-1.175660927181459e-14A96,96 0,1,0 96,2.351321854362918e-14Z" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="xgrid" d="M128,0A128,128 0,1,0 -128,-1.567547902908612e-14A128,128 0,1,0 128,3.135095805817224e-14Z" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path></g><g class="polarsublayer frontplot" transform="translate(154.5,30)"><g class="barlayer"></g><g class="scatterlayer"><g class="trace scatter tracebb4d79" style="stroke-miterlimit: 2; opacity: 1;"><g class="fills" clip-path="url(#clip5ac884polar-for-traces)"><g><path class="js-fill" d="M200,160L160,160L62.92,89.47L95.28,207.02L184.72,236.08L200,160Z" style="fill: rgb(99, 102, 241); fill-opacity: 0.18; stroke-width: 0;"></path></g></g><g class="errorbars"></g><g class="lines"><path class="js-line" d="M200,160L160,160L62.92,89.47L95.28,207.02L184.72,236.08L200,160" clip-path="url(#clip5ac884polar-for-traces)" style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(129, 140, 248); stroke-opacity: 1; stroke-width: 2.5px; opacity: 1;"></path></g><g class="points"><path class="point" transform="translate(200,160)" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z" style="opacity: 1; stroke-width: 0px; fill: rgb(129, 140, 248); fill-opacity: 1;"></path><path class="point" transform="translate(160,160)" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z" style="opacity: 1; stroke-width: 0px; fill: rgb(129, 140, 248); fill-opacity: 1;"></path><path class="point" transform="translate(62.92,89.47)" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z" style="opacity: 1; stroke-width: 0px; fill: rgb(129, 140, 248); fill-opacity: 1;"></path><path class="point" transform="translate(95.28,207.02)" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z" style="opacity: 1; stroke-width: 0px; fill: rgb(129, 140, 248); fill-opacity: 1;"></path><path class="point" transform="translate(184.72,236.08)" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z" style="opacity: 1; stroke-width: 0px; fill: rgb(129, 140, 248); fill-opacity: 1;"></path><path class="point" transform="translate(200,160)" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z" style="opacity: 1; stroke-width: 0px; fill: rgb(129, 140, 248); fill-opacity: 1;"></path></g><g class="text"></g></g></g></g><g class="polarsublayer angular-line"><path d="M160,0A160,160 0,1,0 -160,-1.9594348786357652e-14A160,160 0,1,0 160,3.9188697572715304e-14Z" transform="translate(314.5,190)" stroke-width="1" style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 0.08;"></path></g><g class="polarsublayer radial-line"><line x1="0" y1="0" x2="160" y2="0" transform="translate(314.5,190)" stroke-width="1" style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 0.06;"></line></g><g class="polarsublayer angular-axis"><g class="angularaxistick"><text text-anchor="start" x="2.7" y="3.8499999999999996" data-unformatted="იზრუნე გულით" data-math="N" transform="translate(474.5,190)" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">იზრუნე გულით</text></g><g class="angularaxistick"><text text-anchor="start" x="0.8343458848123582" y="-3.4704615015027045" data-unformatted="იფიქრე ერთი ნაბიჯით წინ" data-math="N" transform="translate(363.94271909999156,37.830957392775446)" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">იფიქრე ერთი ნაბიჯით წინ</text></g><g class="angularaxistick"><text text-anchor="end" x="-2.184345884812358" y="0.23456769211042783" data-unformatted="მიჰყევი საკითხს ბოლომდე" data-math="N" transform="translate(185.05728090000844,95.95435963320428)" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">მიჰყევი საკითხს ბოლომდე</text></g><g class="angularaxistick"><text text-anchor="end" x="-2.1843458848123585" y="11.167373384750428" data-unformatted="იყავი ცნობისმოყვარე" data-math="N" transform="translate(185.05728090000838,284.0456403667957)" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">იყავი ცნობისმოყვარე</text></g><g class="angularaxistick"><text text-anchor="start" x="0.8343458848123576" y="14.219189701587151" data-unformatted="იყავი ერთ გუნდში მომხმარებელთან" data-math="N" transform="translate(363.94271909999156,342.1690426072246)" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">იყავი ერთ გუნდში მომხმარებელთან</text></g></g><g class="polarsublayer radial-axis" transform="translate(314.5,190)"><g class="xtick"><text text-anchor="middle" x="0" y="11.3" data-unformatted="2" data-math="N" transform="translate(32,0)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(71, 85, 105); fill-opacity: 1; white-space: pre; opacity: 1;">2</text></g><g class="xtick"><text text-anchor="middle" x="0" y="11.3" data-unformatted="4" data-math="N" transform="translate(64,0)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(71, 85, 105); fill-opacity: 1; white-space: pre; opacity: 1;">4</text></g><g class="xtick"><text text-anchor="middle" x="0" y="11.3" data-unformatted="6" data-math="N" transform="translate(96,0)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(71, 85, 105); fill-opacity: 1; white-space: pre; opacity: 1;">6</text></g><g class="xtick"><text text-anchor="middle" x="0" y="11.3" data-unformatted="8" data-math="N" transform="translate(128,0)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(71, 85, 105); fill-opacity: 1; white-space: pre; opacity: 1;">8</text></g><g class="xtick"><text text-anchor="middle" x="0" y="11.3" data-unformatted="10" data-math="N" transform="translate(160,0)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(71, 85, 105); fill-opacity: 1; white-space: pre; opacity: 1;">10</text></g></g></g></g><g class="smithlayer"></g><g class="ternarylayer"></g><g class="geolayer"></g><g class="funnelarealayer"></g><g class="pielayer"></g><g class="iciclelayer"></g><g class="treemaplayer"></g><g class="sunburstlayer"></g><g class="glimages"></g></svg><div class="gl-container"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="629.078" height="380"><defs id="topdefs-5ac884"><g class="clips"></g></defs><g class="indicatorlayer"></g><g class="layer-above"><g class="imagelayer"></g><g class="shapelayer"></g></g><g class="selectionlayer"></g><g class="infolayer"><g class="g-gtitle"></g><g class="g-polartitle"></g></g><g class="menulayer"></g><g class="zoomlayer"></g></svg><div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="629.078" height="380"><g class="hoverlayer"></g></svg></div></div></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d330c26c-3155-4c1b-a945-429083402018")) {                    Plotly.newPlot(                        "d330c26c-3155-4c1b-a945-429083402018",                        [{"fill":"toself","fillcolor":"rgba(99,102,241,0.18)","line":{"color":"#818cf8","width":2.5},"marker":{"color":"#818cf8","size":6},"r":[2.5,0.0,7.5,5.0,5.0,2.5],"theta":["\u10d8\u10d6\u10e0\u10e3\u10dc\u10d4 \u10d2\u10e3\u10da\u10d8\u10d7","\u10d8\u10e4\u10d8\u10e5\u10e0\u10d4 \u10d4\u10e0\u10d7\u10d8 \u10dc\u10d0\u10d1\u10d8\u10ef\u10d8\u10d7 \u10ec\u10d8\u10dc","\u10db\u10d8\u10f0\u10e7\u10d4\u10d5\u10d8 \u10e1\u10d0\u10d9\u10d8\u10d7\u10ee\u10e1 \u10d1\u10dd\u10da\u10dd\u10db\u10d3\u10d4","\u10d8\u10e7\u10d0\u10d5\u10d8 \u10ea\u10dc\u10dd\u10d1\u10d8\u10e1\u10db\u10dd\u10e7\u10d5\u10d0\u10e0\u10d4","\u10d8\u10e7\u10d0\u10d5\u10d8 \u10d4\u10e0\u10d7 \u10d2\u10e3\u10dc\u10d3\u10e8\u10d8 \u10db\u10dd\u10db\u10ee\u10db\u10d0\u10e0\u10d4\u10d1\u10d4\u10da\u10d7\u10d0\u10dc","\u10d8\u10d6\u10e0\u10e3\u10dc\u10d4 \u10d2\u10e3\u10da\u10d8\u10d7"],"type":"scatterpolar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"polar":{"radialaxis":{"tickfont":{"size":9,"color":"#475569"},"visible":true,"range":[0,10],"tickvals":[2,4,6,8,10],"gridcolor":"rgba(255,255,255,0.06)","linecolor":"rgba(255,255,255,0.06)"},"angularaxis":{"tickfont":{"size":11,"color":"#94a3b8"},"gridcolor":"rgba(255,255,255,0.06)","linecolor":"rgba(255,255,255,0.08)"},"bgcolor":"rgba(255,255,255,0.02)"},"font":{"family":"Inter, sans-serif","color":"#94a3b8"},"margin":{"t":30,"b":30,"l":30,"r":30},"showlegend":false,"height":380,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">ქვე-ქცევების ქულები</div>
+      <div>                            <div id="f26197d1-267a-4652-8418-ac47592aa1bc" class="plotly-graph-div js-plotly-plot" style="height:360px; width:100%;"><div class="plot-container plotly"><div class="user-select-none svg-container" style="position: relative; width: 100%; height: 360px;"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1066" height="360" style="background: rgba(0, 0, 0, 0);"><defs id="defs-79f3f6"><g class="clips"><clippath id="clip79f3f6xyplot" class="plotclip"><rect width="981" height="219"></rect></clippath><clippath class="axesclip" id="clip79f3f6x"><rect x="55" y="0" width="981" height="360"></rect></clippath><clippath class="axesclip" id="clip79f3f6y"><rect x="0" y="30" width="1066" height="219"></rect></clippath><clippath class="axesclip" id="clip79f3f6xy"><rect x="55" y="30" width="981" height="219"></rect></clippath></g><g class="gradients"></g><g class="patterns"></g></defs><g class="bglayer"><rect class="bg" x="55" y="30" width="981" height="219" style="fill: rgb(0, 0, 0); fill-opacity: 0; stroke-width: 0;"></rect></g><g class="draglayer cursor-crosshair"><g class="xy"><rect class="nsewdrag drag" data-subplot="xy" x="55" y="30" width="981" height="219" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="nwdrag drag cursor-nw-resize" data-subplot="xy" x="35" y="10" width="20" height="20" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="nedrag drag cursor-ne-resize" data-subplot="xy" x="1036" y="10" width="20" height="20" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="swdrag drag cursor-sw-resize" data-subplot="xy" x="35" y="249" width="20" height="20" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="sedrag drag cursor-se-resize" data-subplot="xy" x="1036" y="249" width="20" height="20" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="ewdrag drag cursor-ew-resize" data-subplot="xy" x="153.10000000000002" y="249.5" width="784.8000000000001" height="20" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="wdrag drag cursor-w-resize" data-subplot="xy" x="55" y="249.5" width="98.10000000000001" height="20" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="edrag drag cursor-e-resize" data-subplot="xy" x="937.9" y="249.5" width="98.10000000000001" height="20" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="nsdrag drag cursor-ns-resize" data-subplot="xy" x="34.5" y="51.900000000000006" width="20" height="175.20000000000002" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="sdrag drag cursor-s-resize" data-subplot="xy" x="34.5" y="227.1" width="20" height="21.900000000000002" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect><rect class="ndrag drag cursor-n-resize" data-subplot="xy" x="34.5" y="30" width="20" height="21.900000000000002" style="fill: transparent; stroke-width: 0; pointer-events: all;"></rect></g></g><g class="layer-below"><g class="imagelayer"></g><g class="shapelayer"></g></g><g class="cartesianlayer"><g class="subplot xy"><g class="layer-subplot"><g class="shapelayer"></g><g class="imagelayer"></g></g><g class="minor-gridlayer"><g class="x"></g><g class="y"></g></g><g class="gridlayer"><g class="x"><path class="xgrid crisp" transform="translate(136.75,0)" d="M0,30v219" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.04; stroke-width: 1px;"></path><path class="xgrid crisp" transform="translate(300.25,0)" d="M0,30v219" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.04; stroke-width: 1px;"></path><path class="xgrid crisp" transform="translate(463.75,0)" d="M0,30v219" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.04; stroke-width: 1px;"></path><path class="xgrid crisp" transform="translate(627.25,0)" d="M0,30v219" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.04; stroke-width: 1px;"></path><path class="xgrid crisp" transform="translate(790.75,0)" d="M0,30v219" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.04; stroke-width: 1px;"></path><path class="xgrid crisp" transform="translate(954.25,0)" d="M0,30v219" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.04; stroke-width: 1px;"></path></g><g class="y"><path class="ygrid crisp" transform="translate(0,164.77)" d="M55,0h981" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path><path class="ygrid crisp" transform="translate(0,80.53999999999999)" d="M55,0h981" style="stroke: rgb(255, 255, 255); stroke-opacity: 0.06; stroke-width: 1px;"></path></g></g><g class="zerolinelayer"><path class="yzl zl crisp" transform="translate(0,249)" d="M55,0h981" style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;"></path></g><path class="xlines-below"></path><path class="ylines-below"></path><g class="overlines-below"></g><g class="xaxislayer-below"></g><g class="yaxislayer-below"></g><g class="overaxes-below"></g><g class="plot" transform="translate(55,30)" clip-path="url(#clip79f3f6xyplot)"><g class="barlayer mlayer"><g class="trace bars" style="opacity: 1;"><g class="points"><g class="point"><path d="M32.7,219V219H130.8V219Z" style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(239, 68, 68); fill-opacity: 1;"></path><text class="bartext bartext-outside" text-anchor="middle" data-notex="1" data-unformatted="0.0" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 12px; fill: rgb(241, 245, 249); fill-opacity: 1; white-space: pre;" transform="translate(81.75,213)">0.0</text></g><g class="point"><path d="M196.2,219V134.77H294.3V219Z" style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(245, 158, 11); fill-opacity: 1;"></path><text class="bartext bartext-outside" text-anchor="middle" data-notex="1" data-unformatted="0.5" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 12px; fill: rgb(241, 245, 249); fill-opacity: 1; white-space: pre;" transform="translate(245.25,128.77)">0.5</text></g><g class="point"><path d="M359.7,219V50.54H457.8V219Z" style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(16, 185, 129); fill-opacity: 1;"></path><text class="bartext bartext-outside" text-anchor="middle" data-notex="1" data-unformatted="1.0" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 12px; fill: rgb(241, 245, 249); fill-opacity: 1; white-space: pre;" transform="translate(408.75,44.54)">1.0</text></g><g class="point"><path d="M523.2,219V134.77H621.3V219Z" style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(245, 158, 11); fill-opacity: 1;"></path><text class="bartext bartext-outside" text-anchor="middle" data-notex="1" data-unformatted="0.5" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 12px; fill: rgb(241, 245, 249); fill-opacity: 1; white-space: pre;" transform="translate(572.25,128.77)">0.5</text></g><g class="point"><path d="M686.7,219V134.77H784.8V219Z" style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(245, 158, 11); fill-opacity: 1;"></path><text class="bartext bartext-outside" text-anchor="middle" data-notex="1" data-unformatted="0.5" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 12px; fill: rgb(241, 245, 249); fill-opacity: 1; white-space: pre;" transform="translate(735.75,128.77)">0.5</text></g><g class="point"><path d="M850.2,219V50.54H948.3V219Z" style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(16, 185, 129); fill-opacity: 1;"></path><text class="bartext bartext-outside" text-anchor="middle" data-notex="1" data-unformatted="1.0" data-math="N" x="0" y="0" style="font-family: Inter, sans-serif; font-size: 12px; fill: rgb(241, 245, 249); fill-opacity: 1; white-space: pre;" transform="translate(899.25,44.54)">1.0</text></g></g></g></g></g><g class="overplot"></g><path class="xlines-above crisp" d="M0,0" style="fill: none;"></path><path class="ylines-above crisp" d="M0,0" style="fill: none;"></path><g class="overlines-above"></g><g class="xaxislayer-above"><g class="xtick"><text text-anchor="end" x="0" y="259" data-unformatted="პირველი შთაბეჭდილება" data-math="N" transform="translate(136.75,0) rotate(-35,0,254.5)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">პირველი შთაბეჭდილება</text></g><g class="xtick"><text text-anchor="end" x="0" y="259" data-unformatted="აქტიური მოსმენა და თანაგრძნობა" data-math="N" transform="translate(300.25,0) rotate(-35,0,254.5)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">აქტიური მოსმენა და თანაგრძნობა</text></g><g class="xtick"><text text-anchor="end" x="0" y="259" data-unformatted="საკითხის ესკალაცია" data-math="N" transform="translate(463.75,0) rotate(-35,0,254.5)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">საკითხის ესკალაცია</text></g><g class="xtick"><text text-anchor="end" x="0" y="259" data-unformatted="სწორი მოლოდინის შექმნა" data-math="N" transform="translate(627.25,0) rotate(-35,0,254.5)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">სწორი მოლოდინის შექმნა</text></g><g class="xtick"><text text-anchor="end" x="0" y="259" data-unformatted="ინფორმირებულობა სიახლეებზე" data-math="N" transform="translate(790.75,0) rotate(-35,0,254.5)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">ინფორმირებულობა სიახლეებზე</text></g><g class="xtick"><text text-anchor="end" x="0" y="259" data-unformatted="პასუხისმგებლობის განაწილება" data-math="N" transform="translate(954.25,0) rotate(-35,0,254.5)" style="font-family: Inter, sans-serif; font-size: 9px; fill: rgb(148, 163, 184); fill-opacity: 1; white-space: pre; opacity: 1;">პასუხისმგებლობის განაწილება</text></g></g><g class="yaxislayer-above"><g class="ytick"><text text-anchor="end" x="54" y="3.8499999999999996" data-unformatted="0" data-math="N" transform="translate(0,249)" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;">0</text></g><g class="ytick"><text text-anchor="end" x="54" y="3.8499999999999996" data-unformatted="0.5" data-math="N" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;" transform="translate(0,164.77)">0.5</text></g><g class="ytick"><text text-anchor="end" x="54" y="3.8499999999999996" data-unformatted="1" data-math="N" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(100, 116, 139); fill-opacity: 1; white-space: pre; opacity: 1;" transform="translate(0,80.53999999999999)">1</text></g></g><g class="overaxes-above"></g></g></g><g class="polarlayer"></g><g class="smithlayer"></g><g class="ternarylayer"></g><g class="geolayer"></g><g class="funnelarealayer"></g><g class="pielayer"></g><g class="iciclelayer"></g><g class="treemaplayer"></g><g class="sunburstlayer"></g><g class="glimages"></g></svg><div class="gl-container"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1066" height="360"><defs id="topdefs-79f3f6"><g class="clips"></g></defs><g class="indicatorlayer"></g><g class="layer-above"><g class="imagelayer"></g><g class="shapelayer"><g class="shape-group" data-index="0" clip-path="url(#clip79f3f6y)"><path data-index="0" fill-rule="evenodd" d="M55,131.07999999999998L1036,131.07999999999998" style="opacity: 1; stroke: rgb(99, 102, 241); stroke-opacity: 0.5; fill: rgb(0, 0, 0); fill-opacity: 0; stroke-dasharray: 3px, 3px; stroke-width: 1.5px;"></path></g></g></g><g class="selectionlayer"></g><g class="infolayer"><g class="g-gtitle"></g><g class="g-xtitle"></g><g class="g-ytitle" transform="translate(0.0029296875,0)"><text class="ytitle" transform="rotate(-90,13.496875000000003,139.5)" x="13.496875000000003" y="139.5" text-anchor="middle" data-unformatted="ქულა" data-math="N" style="font-family: Inter, sans-serif; font-size: 14px; fill: rgb(100, 116, 139); opacity: 1; font-weight: normal; white-space: pre;">ქულა</text></g><g class="annotation" data-index="0" style="opacity: 1;"><g class="annotation-text-g" transform="rotate(0,999,122.57999999999998)"><g class="cursor-pointer" transform="translate(962,114)"><rect class="bg" x="0.5" y="0.5" width="73" height="16" style="stroke-width: 1px; stroke: rgb(0, 0, 0); stroke-opacity: 0; fill: rgb(0, 0, 0); fill-opacity: 0;"></rect><text class="annotation-text" text-anchor="middle" data-unformatted="სამიზნე (0.7)" data-math="N" x="37.078125" y="12.5" style="font-family: Inter, sans-serif; font-size: 11px; fill: rgb(99, 102, 241); fill-opacity: 1; white-space: pre;">სამიზნე (0.7)</text></g></g></g></g><g class="menulayer"></g><g class="zoomlayer"></g></svg><div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1066" height="360"><g class="hoverlayer"></g></svg></div></div></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("f26197d1-267a-4652-8418-ac47592aa1bc")) {                    Plotly.newPlot(                        "f26197d1-267a-4652-8418-ac47592aa1bc",                        [{"marker":{"color":["#ef4444","#f59e0b","#10b981","#f59e0b","#f59e0b","#10b981"],"line":{"width":0}},"text":["0.0","0.5","1.0","0.5","0.5","1.0"],"textfont":{"color":"#f1f5f9","size":12},"textposition":"outside","width":0.6,"x":["\u10de\u10d8\u10e0\u10d5\u10d4\u10da\u10d8 \u10e8\u10d7\u10d0\u10d1\u10d4\u10ed\u10d3\u10d8\u10da\u10d4\u10d1\u10d0","\u10d0\u10e5\u10e2\u10d8\u10e3\u10e0\u10d8 \u10db\u10dd\u10e1\u10db\u10d4\u10dc\u10d0 \u10d3\u10d0 \u10d7\u10d0\u10dc\u10d0\u10d2\u10e0\u10eb\u10dc\u10dd\u10d1\u10d0","\u10e1\u10d0\u10d9\u10d8\u10d7\u10ee\u10d8\u10e1 \u10d4\u10e1\u10d9\u10d0\u10da\u10d0\u10ea\u10d8\u10d0","\u10e1\u10ec\u10dd\u10e0\u10d8 \u10db\u10dd\u10da\u10dd\u10d3\u10d8\u10dc\u10d8\u10e1 \u10e8\u10d4\u10e5\u10db\u10dc\u10d0","\u10d8\u10dc\u10e4\u10dd\u10e0\u10db\u10d8\u10e0\u10d4\u10d1\u10e3\u10da\u10dd\u10d1\u10d0 \u10e1\u10d8\u10d0\u10ee\u10da\u10d4\u10d4\u10d1\u10d6\u10d4","\u10de\u10d0\u10e1\u10e3\u10ee\u10d8\u10e1\u10db\u10d2\u10d4\u10d1\u10da\u10dd\u10d1\u10d8\u10e1 \u10d2\u10d0\u10dc\u10d0\u10ec\u10d8\u10da\u10d4\u10d1\u10d0"],"y":[0.0,0.5,1.0,0.5,0.5,1.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"shapes":[{"line":{"color":"rgba(99,102,241,0.5)","dash":"dot","width":1.5},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0.7,"y1":0.7,"yref":"y"}],"annotations":[{"font":{"color":"#6366f1","size":11},"showarrow":false,"text":"\u10e1\u10d0\u10db\u10d8\u10d6\u10dc\u10d4 (0.7)","x":1,"xanchor":"right","xref":"x domain","y":0.7,"yanchor":"bottom","yref":"y"}],"xaxis":{"tickfont":{"size":9,"color":"#94a3b8"},"tickangle":-35,"gridcolor":"rgba(255,255,255,0.04)"},"yaxis":{"tickfont":{"size":11,"color":"#64748b"},"title":{"text":"\u10e5\u10e3\u10da\u10d0","font":{"color":"#64748b"}},"range":[0,1.3],"gridcolor":"rgba(255,255,255,0.06)"},"font":{"family":"Inter, sans-serif","color":"#94a3b8"},"margin":{"t":30,"b":30,"l":30,"r":30},"height":360,"bargap":0.3,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STRENGTHS / WEAKNESSES SUMMARY ══ -->
+
+<section>
+  <div class="wrap">
+    <p class="sec-tag">AI ანალიზი</p>
+    <h2 class="sec-h">ჯამური შეფასება</h2>
+    <div class="summary-grid">
+
+      <!-- Strengths -->
+      <div class="summary-col summary-strengths">
+        <div class="summary-col-head">
+          <span class="summary-col-icon">✓</span> ძლიერი მხარე
+        </div>
+        
+        <div class="summary-item">
+          <div class="summary-item-label">საკითხის ესკალაცია</div>
+          <div class="summary-item-evidence">ოპერატორი მზადყოფნას გამოთქვამს საკითხის გასარკვევად და მომხმარებელს უპასუხოდ არ ტოვებს.</div>
+        </div>
+        
+        <div class="summary-item">
+          <div class="summary-item-label">პასუხისმგებლობის განაწილება</div>
+          <div class="summary-item-evidence">ოპერატორი არ ადანაშაულებს მომხმარებელს და ინარჩუნებს ნეიტრალურ პოზიციას, მიუხედავად აგრესიული კომუნიკაციისა.</div>
+        </div>
+        
+      </div>
+
+      <!-- Weaknesses -->
+      <div class="summary-col summary-weaknesses">
+        <div class="summary-col-head">
+          <span class="summary-col-icon">✗</span> სუსტი მხარე
+        </div>
+        
+        <div class="summary-item">
+          <div class="summary-item-label">პირველი შთაბეჭდილება</div>
+          <div class="summary-item-evidence">ოპერატორი არ მიმართავს მომხმარებელს სახელით და არ ცდილობს მისი სახელის გარკვევას.</div>
+        </div>
+        
+        <div class="summary-item">
+          <div class="summary-item-label">აქტიური მოსმენა და თანაგრძნობა</div>
+          <div class="summary-item-evidence">ოპერატორი არ იჩენს თანაგრძნობას მომხმარებლის ემოციური მდგომარეობის მიმართ, მიუხედავად მისი აშკარა გაღიზიანებისა.</div>
+        </div>
+        
+        <div class="summary-item">
+          <div class="summary-item-label">ინფორმირებულობა სიახლეებზე</div>
+          <div class="summary-item-evidence">ოპერატორი აღნიშნავს, რომ არ აქვს სოფლების რუკები, რაც ზღუდავს მის შესაძლებლობას, ზუსტი ინფორმაცია მიაწოდოს.</div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ DETAILED SCORES TABLE ══ -->
+<section>
+  <div class="wrap">
+    <p class="sec-tag">დეტალური ანალიზი</p>
+    <h2 class="sec-h">პარამეტრების დეტალური ანალიზი</h2>
+    
+
+    
+    <div style="border-radius:var(--r);overflow:hidden;border:1px solid var(--border)">
+    <table class="scores-table">
+      <thead>
+        <tr>
+          <th style="width:32px">P</th>
+          <th>ქვე-ქცევა</th>
+          <th style="width:90px;text-align:center">ქულა</th>
+          <th>მტკიცებულება და დასაბუთება</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        
+        <tr>
+          
+          
+          <td rowspan="3" style="background:rgba(99,102,241,.06);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);writing-mode:vertical-lr;text-orientation:mixed;transform:rotate(180deg);padding:14px 8px;width:32px;text-align:center;vertical-align:middle;border-right:1px solid var(--border)">
+            P1
+          </td>
+          
+          <td>
+            <div class="sub-label">პირველი შთაბეჭდილება</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იზრუნე გულით</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-zero">0 ✗</span>
+          </td>
+          <td>
+            <div class="sub-quote">"გამარჯობა, ნინო გისმენთ, რით შემიძლია დაგეხმაროთ?"</div>
+            <div class="sub-reasoning">ოპერატორმა მიესალმა და საკუთარი თავი წარადგინა, თუმცა მომხმარებელს სახელით არ მიმართა და არც მისი სახელის გარკვევა სცადა.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          <td>
+            <div class="sub-label">აქტიური მოსმენა და თანაგრძნობა</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იზრუნე გულით</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-half">0.5 ≈</span>
+          </td>
+          <td>
+            <div class="sub-quote">"მარტო თქვენთან არ არის თუ მთლიანად ტიბანია გათიშული?"</div>
+            <div class="sub-reasoning">ოპერატორი ცდილობს გაარკვიოს საკითხის დეტალები, თუმცა მომხმარებლის აგრესიული ტონისა და ემოციური მდგომარეობის მიმართ თანაგრძნობას არ იჩენს.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          <td>
+            <div class="sub-label">კომუნიკაციის დასასრული</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იზრუნე გულით</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-na">N/A</span>
+          </td>
+          <td>
+            <div class="sub-quote">"თუ დამელოდებით, ბატონო, გაგირკვევთ რატომ არის გათიშული."</div>
+            <div class="sub-reasoning">საუბარი მომხმარებლის მხრიდან აგრესიული ტონით და მუქარით დასრულდა, ოპერატორს არ მიეცა საშუალება, საუბარი სათანადოდ დაესრულებინა.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          
+          <td rowspan="2" style="background:rgba(99,102,241,.06);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);writing-mode:vertical-lr;text-orientation:mixed;transform:rotate(180deg);padding:14px 8px;width:32px;text-align:center;vertical-align:middle;border-right:1px solid var(--border)">
+            P2
+          </td>
+          
+          <td>
+            <div class="sub-label">საჭიროებაზე მორგებული შეთავაზება</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იფიქრე ერთი ნაბიჯით წინ</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-na">N/A</span>
+          </td>
+          <td>
+            <div class="sub-quote">"მთლიანი გათიშული აქვს და ჩამოდნა მაცივრები და ვიღუპებით და ისა და ისა და."</div>
+            <div class="sub-reasoning">მომხმარებლის ზარი ეხება ელექტროენერგიის გათიშვას და არა საბანკო პროდუქტის ან სერვისის შეთავაზებას.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          <td>
+            <div class="sub-label">პროცესის გამარტივება</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იფიქრე ერთი ნაბიჯით წინ</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-na">N/A</span>
+          </td>
+          <td>
+            <div class="sub-quote">"რუკები არ გვაქვს სამწუხაროდ, რაიონით ვეკითხებით აბონენტებს, იმიტომ, რომ სოფლების მიხედვით ესე ზუსტად არ"</div>
+            <div class="sub-reasoning">ზარი ეხება ელექტროენერგიის გათიშვას, რაც არ არის საბანკო ბიუროკრატიული პროცესი. ოპერატორს არ ჰქონდა შესაძლებლობა, გაემარტივებინა რაიმე პროცესი.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          
+          <td rowspan="2" style="background:rgba(99,102,241,.06);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);writing-mode:vertical-lr;text-orientation:mixed;transform:rotate(180deg);padding:14px 8px;width:32px;text-align:center;vertical-align:middle;border-right:1px solid var(--border)">
+            P3
+          </td>
+          
+          <td>
+            <div class="sub-label">საკითხის ესკალაცია</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">მიჰყევი საკითხს ბოლომდე</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-full">1 ✓</span>
+          </td>
+          <td>
+            <div class="sub-quote">"თუ დამელოდებით, ბატონო, გაგირკვევთ რატომ არის გათიშული."</div>
+            <div class="sub-reasoning">ოპერატორი არ უშვებს მომხმარებელს უპასუხოდ და სთავაზობს საკითხის გარკვევას, რაც მიუთითებს პასუხისმგებლობის აღებაზე.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          <td>
+            <div class="sub-label">სწორი მოლოდინის შექმნა</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">მიჰყევი საკითხს ბოლომდე</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-half">0.5 ≈</span>
+          </td>
+          <td>
+            <div class="sub-quote">"თუ დამელოდებით, ბატონო, გაგირკვევთ რატომ არის გათიშული."</div>
+            <div class="sub-reasoning">ოპერატორმა გამოთქვა მზაობა საკითხის გასარკვევად, თუმცა ზარი მოულოდნელად შეწყდა, რის გამოც დაპირების შესრულება ან ვადების დაზუსტება ვერ მოხერხდა.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          
+          <td rowspan="1" style="background:rgba(99,102,241,.06);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);writing-mode:vertical-lr;text-orientation:mixed;transform:rotate(180deg);padding:14px 8px;width:32px;text-align:center;vertical-align:middle;border-right:1px solid var(--border)">
+            P4
+          </td>
+          
+          <td>
+            <div class="sub-label">ინფორმირებულობა სიახლეებზე</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იყავი ცნობისმოყვარე</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-half">0.5 ≈</span>
+          </td>
+          <td>
+            <div class="sub-quote">"რუკები არ გვაქვს სამწუხაროდ, რაიონით ვეკითხებით აბონენტებს, იმიტომ, რომ სოფლების მიხედვით ესე ზუსტად არ"</div>
+            <div class="sub-reasoning">ოპერატორი სვამს დამაზუსტებელ კითხვებს, თუმცა აღნიშნავს, რომ არ აქვს სოფლების რუკები, რაც მიუთითებს ინფორმაციის ნაკლებობაზე.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          
+          <td rowspan="2" style="background:rgba(99,102,241,.06);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);writing-mode:vertical-lr;text-orientation:mixed;transform:rotate(180deg);padding:14px 8px;width:32px;text-align:center;vertical-align:middle;border-right:1px solid var(--border)">
+            P5
+          </td>
+          
+          <td>
+            <div class="sub-label">პასუხისმგებლობის განაწილება</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იყავი ერთ გუნდში მომხმარებელთან</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-full">1 ✓</span>
+          </td>
+          <td>
+            <div class="sub-quote">"თუ დამელოდებით, ბატონო, გაგირკვევთ რატომ არის გათიშული."</div>
+            <div class="sub-reasoning">ოპერატორი არ ადანაშაულებს მომხმარებელს და ცდილობს საკითხის მოგვარებას, მიუხედავად მომხმარებლის აგრესიული ტონისა.</div>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          
+          <td>
+            <div class="sub-label">უკუკავშირის მიმღებლობა</div>
+            <div style="font-size:11px;color:var(--text-3);margin-top:2px">იყავი ერთ გუნდში მომხმარებელთან</div>
+          </td>
+          <td style="text-align:center;vertical-align:middle">
+            <span class="pill pill-na">N/A</span>
+          </td>
+          <td>
+            <div class="sub-quote">"ენერგო პრო კი არ არის, ეგ არის დადუნება პრო. ენერგო პრო სხვა რამე არი, ეგ არის დადუნება პრო."</div>
+            <div class="sub-reasoning">მომხმარებლის უკუკავშირი ეხება მესამე მხარის მომსახურებას (ენერგო პრო) და არა ბანკის სერვისს, ამიტომ ოპერატორს არ ჰქონდა შესაძლებლობა, მასზე ემოქმედა.</div>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DEALBREAKERS ══ -->
+<section>
+  <div class="wrap">
+    <p class="sec-tag">Dealbreakers</p>
+    <h2 class="sec-h">Dealbreakers</h2>
+
+    <div style="border-radius:var(--r);overflow:hidden;border:1px solid var(--border)">
+    <table class="db-table">
+      <colgroup>
+        <col class="col-id">
+        <col class="col-desc">
+        <col class="col-found">
+        <col>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>კრიტიკული გადაცდომა</th>
+          <th style="text-align:center">გამოვლინდა?</th>
+          <th>მტკიცებულება</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td style="color:var(--text-3);font-weight:700;font-size:12px;vertical-align:middle">DB1</td>
+          <td style="color:var(--text);line-height:1.55">ოპერატორმა თქვა "ეს მე არ მეხება" (ან მსგავსი ფრაზა).</td>
+          <td style="text-align:center;vertical-align:middle">
+            
+            <span class="db-badge-no">✓ არა</span>
+            
+          </td>
+          <td style="font-size:12px;color:var(--text-2);font-family:&#39;JetBrains Mono&#39;,monospace;line-height:1.5">
+            —
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="color:var(--text-3);font-weight:700;font-size:12px;vertical-align:middle">DB2</td>
+          <td style="color:var(--text);line-height:1.55">ოპერატორმა გამოიყენა მომხმარებლის დამამცირებელი, ირონიული ან უარყოფითი ტონი/ფორმულირებები (მაგ.: „დამშვიდდით", „აბა რა განერვიულებთ", „ნუ აჭარბებთ").</td>
+          <td style="text-align:center;vertical-align:middle">
+            
+            <span class="db-badge-no">✓ არა</span>
+            
+          </td>
+          <td style="font-size:12px;color:var(--text-2);font-family:&#39;JetBrains Mono&#39;,monospace;line-height:1.5">
+            —
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="color:var(--text-3);font-weight:700;font-size:12px;vertical-align:middle">DB3</td>
+          <td style="color:var(--text);line-height:1.55">ოპერატორმა პასუხისმგებლობა პირდაპირ მომხმარებელს დააკისრა ან მომხმარებელი დაადანაშაულა.</td>
+          <td style="text-align:center;vertical-align:middle">
+            
+            <span class="db-badge-no">✓ არა</span>
+            
+          </td>
+          <td style="font-size:12px;color:var(--text-2);font-family:&#39;JetBrains Mono&#39;,monospace;line-height:1.5">
+            —
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="color:var(--text-3);font-weight:700;font-size:12px;vertical-align:middle">DB4</td>
+          <td style="color:var(--text);line-height:1.55">ოპერატორმა უკუკავშირის მიღებისას მიიღო თავდაცვითი პოზიცია, ედავებოდა მომხმარებელს ან კონფლიქტურ კომუნიკაციაში გადავიდა.</td>
+          <td style="text-align:center;vertical-align:middle">
+            
+            <span class="db-badge-no">✓ არა</span>
+            
+          </td>
+          <td style="font-size:12px;color:var(--text-2);font-family:&#39;JetBrains Mono&#39;,monospace;line-height:1.5">
+            —
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WOW SERVICE ══ -->
+<section>
+  <div class="wrap">
+    <p class="sec-tag">Extra Mile</p>
+    <h2 class="sec-h">Extra Mile</h2>
+    <div class="wow-box">
+      <div class="wow-icon">○</div>
+      <div>
+        <div class="wow-found" style="color:var(--text-2)">
+          Extra Mile არ გამოვლინდა
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MICRO-IMPROVEMENTS ══ -->
+
+<section>
+  <div class="wrap">
+    <p class="sec-tag">განვითარება</p>
+    <h2 class="sec-h">3 მიკრო-ქცევა გასაუმჯობესებლად</h2>
+    <div class="improvements-grid">
+      
+      <div class="imp-card">
+        <div class="imp-num">1</div>
+        <div class="imp-title">მისალმება და სახელის გამოყენება</div>
+        
+        <div class="imp-tip"><span class="tip-dot">→</span><span>ყოველთვის მიესალმეთ მომხმარებელს თბილად და შესთავაზეთ, რომ სახელით მიმართოთ.</span></div>
+        
+        
+        <div class="imp-tip"><span class="tip-dot">→</span><span>ზარის განმავლობაში ერთხელ მაინც გამოიყენეთ მომხმარებლის სახელი, რათა პერსონალური შეხება შექმნათ.</span></div>
+        
+      </div>
+      
+      <div class="imp-card">
+        <div class="imp-num">2</div>
+        <div class="imp-title">ემოციური ინტელექტი და თანაგრძნობა</div>
+        
+        <div class="imp-tip"><span class="tip-dot">→</span><span>მომხმარებლის გაღიზიანების ან აგრესიის შემთხვევაში, შეეცადეთ ამოიცნოთ მისი ემოციები და გამოხატოთ თანაგრძნობა.</span></div>
+        
+        
+        <div class="imp-tip"><span class="tip-dot">→</span><span>გამოიყენეთ ფრაზები, როგორიცაა „მესმის თქვენი გაღიზიანება“ ან „ვწუხვარ, რომ ასეთ სიტუაციაში ხართ“, რათა მომხმარებელმა იგრძნოს, რომ უსმენენ.</span></div>
+        
+      </div>
+      
+      <div class="imp-card">
+        <div class="imp-num">3</div>
+        <div class="imp-title">ინფორმაციის სრულყოფა და ხელსაწყოები</div>
+        
+        <div class="imp-tip"><span class="tip-dot">→</span><span>შეეცადეთ გაიუმჯობესოთ ცოდნა სხვადასხვა გეოგრაფიული ლოკაციის შესახებ, რათა უფრო ზუსტი ინფორმაცია მიაწოდოთ მომხმარებელს.</span></div>
+        
+        
+        <div class="imp-tip"><span class="tip-dot">→</span><span>მოითხოვეთ შესაბამისი რესურსები ან ხელსაწყოები (მაგ. რუკები), რათა უკეთ შეძლოთ მომხმარებლისთვის დახმარების გაწევა.</span></div>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+</div><svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;"><path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0; fill: black;"></path></svg><!-- /#tab-main -->
+
+
+<!-- ══════════════════════════════════════════════════
+     SEMANTIC ANALYSIS TAB
+     ══════════════════════════════════════════════════ -->
+<div id="tab-semantic" style="">
+
+
+
+<!-- SSA: 1 — Call Summary -->
+<section>
+  <div class="wrap">
+    <p class="sec-tag">ზარის შეჯამება</p>
+    <h2 class="sec-h">Call Summary</h2>
+
+    <div style="background:rgba(239,68,68,.10);border:1px solid rgba(239,68,68,.35);border-radius:var(--r);padding:28px 32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+      <div style="font-size:56px;font-weight:900;line-height:1;flex-shrink:0;width:68px;text-align:center;color:#ef4444">✗</div>
+      <div style="flex:1;min-width:220px">
+        <div style="font-size:24px;font-weight:900;color:#ef4444;line-height:1.15;margin-bottom:4px">Call Unsuccessful</div>
+        <div style="font-size:14px;font-weight:600;color:var(--text-2);margin-bottom:10px">ზარი წარუმატებელია</div>
+        
+        <div style="font-size:13px;color:var(--text-2);line-height:1.65">მომხმარებლის პრობლემა (ელექტროენერგიის გათიშვა) არ მოგვარებულა ზარის განმავლობაში და საკითხი ღია დარჩა.</div>
+        
+      </div>
+    </div>
+
+    <div class="call-summary-metrics">
+      <div class="csm-item">
+        <div class="csm-label">Overall Score</div>
+        <div class="csm-value" style="color:#f59e0b">58.0%</div>
+      </div>
+      <div class="csm-item">
+        <div class="csm-label">FCR</div>
+        <div class="csm-value" style="color:#ef4444">✗ გადაუწყვეტელია</div>
+      </div>
+      <div class="csm-item">
+        <div class="csm-label">სენტიმენტი</div>
+        <div class="csm-value" style="font-size:14px">
+          <span style="color:#ef4444">ნეგატიური</span>
+          <span style="color:var(--text-3)"> → </span>
+          <span style="color:#ef4444">ნეგატიური</span>
+        </div>
+      </div>
+      <div class="csm-item">
+        <div class="csm-label">Empathy Score</div>
+        <div class="csm-value" style="color:#ef4444">2<span style="font-size:13px;color:var(--text-3)">/10</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SSA: 2 — Semantic Journey -->
+<section>
+  <div class="wrap">
+    <p class="sec-tag">სენტიმენტის მოგზაურობა</p>
+    <h2 class="sec-h">Semantic Journey</h2>
+
+    <div style="margin-bottom:10px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3)">Sentiment Delta (Δ)</div>
+    <div class="sentiment-flow">
+      <div class="sent-box" style="border-color:#ef444455;background:#ef444414">
+        <div class="sent-box-label" style="color:#ef4444">დასაწყისი</div>
+        <div class="sent-box-val" style="color:#ef4444">ნეგატიური</div>
+      </div>
+      <div class="sent-arrow" style="color:#ef4444">↓</div>
+      <div class="sent-box" style="border-color:#ef444455;background:#ef44440d;min-width:100px;flex:0.6">
+        <div class="sent-box-label" style="color:#ef4444">Δ ცვლილება</div>
+        <div class="sent-box-val" style="color:#ef4444">გაუარესდა</div>
+      </div>
+      <div class="sent-arrow" style="color:#ef4444">→</div>
+      <div class="sent-box" style="border-color:#ef444455;background:#ef444414">
+        <div class="sent-box-label" style="color:#ef4444">დასასრული</div>
+        <div class="sent-box-val" style="color:#ef4444">ნეგატიური</div>
+      </div>
+    </div>
+
+    
+    <div class="ssa-detail-text" style="margin-bottom:0">ზარის დასაწყისში მომხმარებელი უკვე გაღიზიანებული იყო ელექტროენერგიის გათიშვის გამო. ოპერატორის მიერ ადგილმდებარეობის დაზუსტების მცდელობამ, რაც მომხმარებელმა კომპანიის არაკომპეტენტურობად აღიქვა, მისი ემოციური მდგომარეობა მკვეთრად გააუარესა. ზარის ბოლოს მომხმარებელი უკიდურესად გაბრაზებული, შეურაცხმყოფელი და მუქარის შემცველი ტონით საუბრობდა, რაც მიუთითებს სენტიმენტის მნიშვნელოვან გაუარესებაზე.</div>
+    
+
+    
+    <div class="pivot-block">
+      <div class="pivot-header">
+        <span style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3)">Pivot Point</span>
+        <span class="pivot-effect-badge pivot-effect-worsened">
+          ↓ გაუარესდა
+        </span>
+      </div>
+      <div class="pivot-quote">"ტიბანი სად არის ბატონო?"</div>
+      
+      <div class="pivot-explanation">ეს იყო ზარის გარდამტეხი მომენტი, რადგან მომხმარებელმა, რომელმაც უკვე დაასახელა თავისი ადგილმდებარეობა და აღწერა პრობლემის სიმწვავე, ოპერატორის ამ კითხვა აღიქვა როგორც არაკომპეტენტურობა და მისი პრობლემის უგულებელყოფა. ამ მომენტიდან მომხმარებლის გაღიზიანება უკიდურეს აგრესიაში გადაიზარდა.</div>
+      
+    </div>
+    
+
+  </div>
+</section>
+
+<!-- SSA: 3 — Call Timeline (static SVG, GitHub-compatible) -->
+
+<section>
+  <div class="wrap">
+    <p class="sec-tag">ზარის დინამიკა</p>
+    <h2 class="sec-h">Call Timeline</h2>
+
+    <div class="timeline-legend-row">
+      <span class="tl-legend-item">
+        <span class="tl-legend-line"></span> მომხმარებლის სენტიმენტი
+      </span>
+      <span class="tl-legend-item">
+        <span class="tl-legend-dot" style="background:#f59e0b"></span> ★ Key Moment
+      </span>
+      <span class="tl-legend-item">
+        <span class="tl-legend-dot" style="background:#10b981"></span> ◆ Resolution
+      </span>
+      <span class="tl-legend-item">
+        <span class="tl-legend-dot" style="background:#6366f1;border-radius:50%"></span> ● Clarification
+      </span>
+      <span class="tl-legend-item">
+        <span class="tl-legend-dot" style="background:#ef4444"></span> ✕ Interruption
+      </span>
+      <span class="tl-legend-item">
+        <span class="tl-legend-dot" style="background:#f97316"></span> ▲ Escalation
+      </span>
+      <span class="tl-legend-item">
+        <span class="tl-legend-dot" style="background:#8b5cf6"></span> ■ Tone Shift
+      </span>
+    </div>
+
+    <div class="timeline-chart-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390" style="width:100%;display:block;background:#0d0d28;border-radius:10px"><defs><lineargradient id="tl-pos" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10b981" stop-opacity="0.22"></stop><stop offset="100%" stop-color="#10b981" stop-opacity="0.01"></stop></lineargradient><lineargradient id="tl-neg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ef4444" stop-opacity="0.01"></stop><stop offset="100%" stop-color="#ef4444" stop-opacity="0.20"></stop></lineargradient></defs><rect x="72.0" y="62" width="82.8" height="276" fill="#6366f1" fill-opacity="0.09" stroke="none"></rect><text x="113.4" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#6366f1">გახსნა და საწყისი გაღი</text><rect x="154.8" y="62" width="165.6" height="276" fill="#f59e0b" fill-opacity="0.09" stroke="none"></rect><line x1="154.8" y1="62" x2="154.8" y2="338" stroke="rgba(255,255,255,0.14)" stroke-width="1" stroke-dasharray="4,3"></line><text x="237.6" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#f59e0b">საკითხის ესკალაცია და </text><rect x="320.4" y="62" width="331.2" height="276" fill="#10b981" fill-opacity="0.09" stroke="none"></rect><line x1="320.4" y1="62" x2="320.4" y2="338" stroke="rgba(255,255,255,0.14)" stroke-width="1" stroke-dasharray="4,3"></line><text x="486.0" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#10b981">მომხმარებლის აგრესია დ</text><rect x="651.6" y="62" width="248.4" height="276" fill="#8b5cf6" fill-opacity="0.09" stroke="none"></rect><line x1="651.6" y1="62" x2="651.6" y2="338" stroke="rgba(255,255,255,0.14)" stroke-width="1" stroke-dasharray="4,3"></line><text x="775.8" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#8b5cf6">გადაწყვეტის მცდელობა დ</text><line x1="72" y1="315.0" x2="900" y2="315.0" stroke="rgba(255,255,255,0.05)" stroke-width="1"></line><text x="67" y="319.0" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#64748b">კრიზისი</text><line x1="72" y1="276.7" x2="900" y2="276.7" stroke="rgba(255,255,255,0.05)" stroke-width="1"></line><text x="67" y="280.7" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#64748b">ნეგ.</text><line x1="72" y1="238.3" x2="900" y2="238.3" stroke="rgba(255,255,255,0.05)" stroke-width="1"></line><text x="67" y="242.3" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#64748b">სუსტ.–</text><line x1="72" y1="200.0" x2="900" y2="200.0" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"></line><text x="67" y="204.0" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#64748b">ნეიტრ.</text><line x1="72" y1="161.7" x2="900" y2="161.7" stroke="rgba(255,255,255,0.05)" stroke-width="1"></line><text x="67" y="165.7" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#64748b">სუსტ.+</text><line x1="72" y1="123.3" x2="900" y2="123.3" stroke="rgba(255,255,255,0.05)" stroke-width="1"></line><text x="67" y="127.3" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#64748b">პოზ.</text><line x1="72" y1="85.0" x2="900" y2="85.0" stroke="rgba(255,255,255,0.05)" stroke-width="1"></line><text x="67" y="89.0" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#64748b">ძლ.+</text><line x1="72.0" y1="338" x2="72.0" y2="343" stroke="#64748b" stroke-width="1"></line><text x="72.0" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">0%</text><line x1="237.6" y1="338" x2="237.6" y2="343" stroke="#64748b" stroke-width="1"></line><text x="237.6" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">20%</text><line x1="403.2" y1="338" x2="403.2" y2="343" stroke="#64748b" stroke-width="1"></line><text x="403.2" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">40%</text><line x1="568.8" y1="338" x2="568.8" y2="343" stroke="#64748b" stroke-width="1"></line><text x="568.8" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">60%</text><line x1="734.4" y1="338" x2="734.4" y2="343" stroke="#64748b" stroke-width="1"></line><text x="734.4" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">80%</text><line x1="900.0" y1="338" x2="900.0" y2="343" stroke="#64748b" stroke-width="1"></line><text x="900.0" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">100%</text><text x="486.0" y="384" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">ზარის პროგრესი</text><path d="M 72.0,200.0 L 72.0,200.0 L 154.8,200.0 L 237.6,200.0 L 403.2,200.0 L 568.8,200.0 L 734.4,200.0 L 900.0,200.0 L 900.0,200.0 Z" fill="url(#tl-pos)"></path><path d="M 72.0,200.0 L 72.0,238.3 L 154.8,276.7 L 237.6,315.0 L 403.2,315.0 L 568.8,315.0 L 734.4,315.0 L 900.0,315.0 L 900.0,200.0 Z" fill="url(#tl-neg)"></path><path d="M 72.0,238.3 L 154.8,276.7 L 237.6,315.0 L 403.2,315.0 L 568.8,315.0 L 734.4,315.0 L 900.0,315.0" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></path><circle cx="72.0" cy="238.3" r="4" fill="#818cf8" stroke="#0d0d28" stroke-width="1.5"></circle><circle cx="154.8" cy="276.7" r="4" fill="#818cf8" stroke="#0d0d28" stroke-width="1.5"></circle><circle cx="237.6" cy="315.0" r="4" fill="#818cf8" stroke="#0d0d28" stroke-width="1.5"></circle><circle cx="403.2" cy="315.0" r="4" fill="#818cf8" stroke="#0d0d28" stroke-width="1.5"></circle><circle cx="568.8" cy="315.0" r="4" fill="#818cf8" stroke="#0d0d28" stroke-width="1.5"></circle><circle cx="734.4" cy="315.0" r="4" fill="#818cf8" stroke="#0d0d28" stroke-width="1.5"></circle><circle cx="900.0" cy="315.0" r="4" fill="#818cf8" stroke="#0d0d28" stroke-width="1.5"></circle><circle cx="130.0" cy="238.3" r="11" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.55"></circle><text x="130.0" y="242.3" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8b5cf6">■</text><circle cx="287.3" cy="276.7" r="11" fill="#94a3b8" fill-opacity="0.18" stroke="#94a3b8" stroke-width="1.5" stroke-opacity="0.55"></circle><text x="287.3" y="280.7" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">●</text><circle cx="328.7" cy="315.0" r="11" fill="#f97316" fill-opacity="0.18" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.55"></circle><text x="328.7" y="319.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#f97316">▲</text><text x="328.7" y="342.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#f97316" font-weight="700">მომხმარებლის შეურაცხ</text><circle cx="502.6" cy="315.0" r="11" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.55"></circle><text x="502.6" y="319.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8b5cf6">■</text><circle cx="1073.9" cy="315.0" r="11" fill="#f97316" fill-opacity="0.18" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.55"></circle><text x="1073.9" y="319.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#f97316">▲</text><text x="1073.9" y="342.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#f97316" font-weight="700">მომხმარებლის მუქარა</text><circle cx="1214.6" cy="315.0" r="11" fill="#6366f1" fill-opacity="0.18" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.55"></circle><text x="1214.6" y="319.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#6366f1">●</text><circle cx="1347.1" cy="315.0" r="11" fill="#f97316" fill-opacity="0.18" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.55"></circle><text x="1347.1" y="319.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#f97316">▲</text><text x="1347.1" y="342.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#f97316" font-weight="700">მომხმარებლის საბოლოო</text></svg>
+    </div>
+
+
+  </div>
+</section>
+
+
+<!-- SSA: 4 — Conversational Ergonomics & Acoustic Subtext (merged) -->
+<section>
+  <div class="wrap">
+    <p class="sec-tag">საუბრის ხარისხი და ხმის ნიუანსი</p>
+    <h2 class="sec-h">Conversational Ergonomics &amp; Acoustic Subtext</h2>
+
+    <!-- Ergonomics row -->
+    <div class="ssa-erg-grid" style="margin-bottom:20px">
+
+      <div class="ssa-erg-card" style="animation: 0.4s ease 0s 1 normal both running fadeUp;">
+        <div class="ssa-card-head">Speech Velocity</div>
+        <div class="velocity-pill" style="background:#10b98118;color:#10b981;border:1px solid #10b98144">
+          <span>✓</span>
+          <span>ნორმალური</span>
+        </div>
+        <div class="ssa-detail-text">ოპერატორის საუბრის ტემპი ნორმალური და კონტროლირებადი იყო, თუმცა მომხმარებლის მაღალი აგზნებულობის ფონზე, ეს ტემპი შესაძლოა გულგრილად აღქმულიყო. მომხმარებელი საუბრობდა სწრაფად და აგრესიულად.</div>
+      </div>
+
+      <div class="ssa-erg-card" style="animation: 0.4s ease 0s 1 normal both running fadeUp;">
+        <div class="ssa-card-head">Interruption Analysis</div>
+        <div class="interrupt-row">
+          <div class="interrupt-stat">
+            <div class="interrupt-num" style="color:#ef4444">4</div>
+            <div class="interrupt-lbl">ნეგატიური</div>
+          </div>
+          <div class="interrupt-stat">
+            <div class="interrupt-num" style="color:#10b981">1</div>
+            <div class="interrupt-lbl">აფირმაციული</div>
+          </div>
+        </div>
+        
+        <div class="interrupt-instances">
+          
+          
+          <div class="inst-row inst-row-neg">
+            <span class="inst-time-badge inst-time-neg">0:05</span>
+            <span class="inst-icon" style="color:#ef4444">✕</span>
+            
+            <span class="inst-quote">"გამარჯობათ, გამარჯობათ."</span>
+            
+          </div>
+          
+          
+          <div class="inst-row inst-row-neg">
+            <span class="inst-time-badge inst-time-neg">0:41</span>
+            <span class="inst-icon" style="color:#ef4444">✕</span>
+            
+            <span class="inst-quote">"ტიბანი სად არის?"</span>
+            
+          </div>
+          
+          
+          <div class="inst-row inst-row-aff">
+            <span class="inst-time-badge inst-time-aff">0:41</span>
+            <span class="inst-icon" style="color:#10b981">✓</span>
+            
+            <span class="inst-quote">"დიახ."</span>
+            
+          </div>
+          
+          
+          <div class="inst-row inst-row-neg">
+            <span class="inst-time-badge inst-time-neg">0:47</span>
+            <span class="inst-icon" style="color:#ef4444">✕</span>
+            
+            <span class="inst-quote">"მე მეკითხებით, მე მეკითხებით ტიბანი სად არისო?"</span>
+            
+          </div>
+          
+          
+          <div class="inst-row inst-row-neg">
+            <span class="inst-time-badge inst-time-neg">0:51</span>
+            <span class="inst-icon" style="color:#ef4444">✕</span>
+            
+            <span class="inst-quote">"რაიონი მითხრათ, დიახ, რაიონი."</span>
+            
+          </div>
+          
+          
+          <div class="inst-row inst-row-neg">
+            <span class="inst-time-badge inst-time-neg">2:40</span>
+            <span class="inst-icon" style="color:#ef4444">✕</span>
+            
+            <span class="inst-quote">"მთლიანი გათიშული აქ და ჩამოდნა მაცივრები და ვიღუპებით და ისა და ისა და."</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="ssa-detail-text">მომხმარებელმა რამდენჯერმე უარყოფითად შეაწყვეტინა ოპერატორს საუბარი, რაც მისი მაღალი გაღიზიანების მაჩვენებელი იყო. ოპერატორმა ერთხელ შეაწყვეტინა მომხმარებელს, რათა დაეზუსტებინა რაიონი, თუმცა ეს მომხმარებლისთვის კიდევ უფრო გამაღიზიანებელი აღმოჩნდა.</div>
+      </div>
+
+      <div class="ssa-erg-card" style="animation: 0.4s ease 0s 1 normal both running fadeUp;">
+        <div class="ssa-card-head">Dominance Ratio</div>
+        <div class="dominance-bar-wrap">
+          <div class="dominance-bar">
+            <div class="dom-op" style="width:30%"></div>
+            <div class="dom-cu" style="width:70%"></div>
+          </div>
+          <div class="dominance-labels">
+            <span style="color:var(--accent-2)">ოპერატორი 30%</span>
+            <span>მომხმარებელი 70%</span>
+          </div>
+        </div>
+        <div class="ssa-detail-text">მომხმარებელმა დომინირებდა საუბარში, რაც მისი მაღალი ემოციური დატვირთვით და ოპერატორის მხრიდან არაეფექტური მართვით იყო განპირობებული. ოპერატორი ძირითადად კითხვებს სვამდა ან მოკლე განმარტებებს აკეთებდა.</div>
+      </div>
+
+    </div>
+
+    <!-- Divider between ergonomics and acoustic -->
+    <div style="border-top:1px solid var(--border);margin-bottom:20px;
+                display:flex;align-items:center;gap:12px">
+      <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+                   color:var(--text-3);white-space:nowrap;padding-top:12px">Acoustic &amp; Vocal Subtext</span>
+      <div style="flex:1;border-top:1px solid var(--border);margin-top:12px"></div>
+    </div>
+
+    <!-- Acoustic row -->
+    <div class="ssa-acoustic-grid">
+
+      <div class="ssa-erg-card" style="animation: 0.4s ease 0s 1 normal both running fadeUp;">
+        <div class="ssa-card-head">Tone Mapping &amp; Confidence</div>
+        <div class="tone-pill-big" style="background:rgba(100,116,139,.15);color:#64748b;border:1px solid #64748b44">
+          <span class="tone-icon-big">⊡</span>
+          <span>Robotic</span>
+        </div>
+        <div class="confidence-chips">
+          
+          <span class="conf-chip conf-chip-ok">✓ Up-talk არ გამოვლინდა</span>
+          
+          <span class="conf-chip conf-chip-ok">
+            0 filler სიტყვა
+          </span>
+        </div>
+        
+        <div class="ssa-detail-text">ოპერატორის ხმაში არ შეინიშნებოდა გაურკვევლობა ან ავტორიტეტის ნაკლებობა ინტონაციის აწევით. ასევე, არ იყო გამოყენებული შემავსებელი სიტყვები, რაც ყოყმანს მიანიშნებდა.</div>
+      </div>
+
+      <div class="ssa-erg-card" style="animation: 0.4s ease 0s 1 normal both running fadeUp;">
+        <div class="ssa-card-head">Acoustic Alignment</div>
+        <div class="alignment-badge alignment-bad">
+          
+          <span>✗</span> <span>სიტყვა და ტემბრი არ თანხვდება</span>
+          
+        </div>
+        <div class="ssa-detail-text">ოპერატორის მშვიდი, პროცედურული ტონი არ იყო თანხვედრაში მომხმარებლის უკიდურესად გაღიზიანებულ და აგრესიულ ემოციურ მდგომარეობასთან. ეს შეუსაბამობა კიდევ უფრო ამძაფრებდა მომხმარებლის განცდას, რომ მას არ უსმენდნენ და არ ესმოდათ.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+</div><!-- /#tab-semantic -->
+
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="wrap">
+    <p>სერვის შეფასების ანგარიში &nbsp;·&nbsp; 25 March 2026, 12:38</p>
+    <p style="margin-top:5px"><a href="https://www.youtube.com/watch?v=h33wnfUMgS4&amp;t=2s" target="_blank" style="color:var(--text-3)">https://www.youtube.com/watch?v=h33wnfUMgS4&amp;t=2s</a></p>
+  </div>
+</footer>
+
+<script>
+// ── Tab switching ─────────────────────────────────────────────────────────
+function switchTab(name) {
+  document.getElementById('tab-main').style.display     = name === 'main'     ? '' : 'none';
+  document.getElementById('tab-semantic').style.display = name === 'semantic' ? '' : 'none';
+  document.getElementById('btn-main').classList.toggle('active',     name === 'main');
+  document.getElementById('btn-semantic').classList.toggle('active', name === 'semantic');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// ── Animate score pills on scroll ────────────────────────────────────────
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.animation = 'fadeUp 0.4s ease both';
+      obs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.1});
+document.querySelectorAll('.imp-card, .wow-box, .ssa-score-card, .ssa-erg-card, .coaching-card').forEach(el => obs.observe(el));
+
+// ── SVG ring animation ────────────────────────────────────────────────────
+// Animate rings when semantic tab is opened
+const ringObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.transition = 'stroke-dashoffset 1s ease';
+      ringObs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.1});
+document.querySelectorAll('.ssa-ring-wrap circle:last-child').forEach(c => ringObs.observe(c));
+</script>
+
+</body></html>
